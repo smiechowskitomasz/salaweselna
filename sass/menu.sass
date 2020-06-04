@@ -1,0 +1,59 @@
+.menu
+  display: flex
+  margin-top: 100px
+  padding-bottom: 220px
+  @media( max-width: 1023px )
+    flex-direction: column
+    margin-top: 100px
+
+  &__flexboxContainer
+    display: flex
+    flex-direction: column
+    width: 50%
+    padding: 0 122px
+    margin: 0 auto
+
+    @media( max-width: 1207px )
+      padding: 0 62px
+    @media( max-width: 1023px )
+      padding: 0
+      width: 86%
+
+  &__img
+    width: auto
+    height: auto
+    max-height: 647px
+    @media( max-width: 1080px )
+      transform: scale(0.88)
+      transform: translateX(-40px)
+    @media( max-width: 1023px )
+      margin: 0 auto
+      transform: scale(1)
+      transform: translateX(0)
+      width: 556px
+    @media( max-width: 556px )
+      width: 100%
+  &__header
+    font-weight: bold
+    font-size: 88px
+    line-height: 90px
+    letter-spacing: -0.04em
+    color: #2B362A
+    @media( max-width: 1110px )
+      font-size: 78px
+      line-height: 80px
+    @media( max-width: 1023px )
+      text-align: center
+      margin-top: 40px
+    @media( max-width: 394px )
+      font-size: 66px
+      line-height: 68px
+
+  &__paragraph
+    font-size: 24px
+    line-height: 34px
+    color: #5B5B5B
+    margin: 40px auto
+    @media( max-width: 1110px )
+      font-size: 22px
+      line-height: 32px

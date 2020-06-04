@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,KAAK;EACjB,cAAc,EAAE,WAAW;EAC3B,gBAAgB,EAAE,OAAO;CAEJ;;AADpB,AAAD,sBAAW,CAAC;EACV,KAAK,EAAE,OAAO;CAAG",
+    "sources": [
+        "../sass/askme.sass"
+    ],
+    "names": [],
+    "file": "askme.css"
+}

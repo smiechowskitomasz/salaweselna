@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Limar - Dom Weselny</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav" id="animation">
+        <div class="nav__logo">
+          <img class="nav__img" src="icons/logoLimar.svg" alt="page logo" />
+        </div>
+        <ul class="nav__list desktop">
+          <li class="nav__item">
+            <a class="nav__link--resetStyle" href="#mainPage">Strona Główna</a>
+          </li>
+          <li class="nav__item ">
+            <a class="nav__link--resetStyle" href="#whyWorth">O nas</a>
+          </li>
+          <li class="nav__item" id="contactLink">
+            <a class="nav__link--resetStyle" href="#funding">Oferta</a>
+          </li>
+          <li class="nav__item" id="contactLink">
+            <a class="nav__link--resetStyle" href="#funding">Galeria</a>
+          </li>
+          <li class="nav__item" id="aboutMeLink">
+            <a class="nav__link--resetStyle" href="#footer"> Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <header id="animation" class="header">
+        <h1 class="header__mainHeader">Dom Weselny Limar w Piszu</h1>
+        <p class="header__paragraph">
+          Organizujemy: wesela, studniówki, chrzty, komunie, sylwestra,
+          uroczystości jubileuszowe, imprezy okolicznościowe.
+        </p>
+        <a href="#contact" class="header__contactLink"
+          ><button class="header__contactButton">Więcej</button></a
+        >
+      </header>
+      <main>
+        <section class="arrangement">
+          <img
+            class="arrangement__img"
+            src="img/chairs.png"
+            alt="Nasz wystrój sal"
+          />
+          <div class="arrangement__flexboxContainer">
+            <h2 class="arrangement__header">Aranżacja wnętrz</h2>
+            <p class="arrangement__paragraph">
+              Eleganckie wnętrze sali barokowej, zapewni doskonałą scenerię do
+              organizacji imprez o dowolnej tematyce. Nasza troska o detale
+              sprawi, że zaproszeni Goście zapamiętają na długo ten wyjątkowy
+              dzień!
+            </p>
+            <h3 class="arrangement__head">Dodatkowo</h3>
+            <p class="arrangement__param">
+              Posiadamy w ofercie również limuzynę, autokar oraz pokoje
+              noclegowe dla gości domu weselnego.
+            </p>
+          </div>
+        </section>
+        <section class="menu">
+          <div class="menu__flexboxContainer">
+            <h2 class="menu__header">Menu</h2>
+            <p class="menu__paragraph">
+              Ustalamy indywidualnie według życzenia osób zamawiających
+              przyjęcie. W skład menu weselnego wchodzi: -6 dań gorących -10
+              przystawek -napoje gazowane, soki, woda mineralna -słodki bufet :
+              ciasta,słodkie przekąski, owoce, kawa, hrerbata. Za dodatkową
+              opłatą: stół wiejski i fontanna czekoladowa z szaszłykami
+              owocowymi.
+            </p>
+          </div>
+          <img class="menu__img" src="img/menu.png" alt="Przykładowe potrawy" />
+        </section>
+        <section class="carousel">
+          <h2 class="carousel__header">Sala barokowa</h2>
+          <div class="carousel__container">
+            <img
+              class="carousel__img"
+              src="img/photo1.png"
+              alt="Wygląd naszych sal"
+            />
+            <button class="carousel__button carousel__prevButton">
+              <img
+                class="carousel__icon carousel__prevIcon"
+                src="icons/prevButton.svg"
+                alt="poprzednie zdjęcie"
+              />
+            </button>
+            <button class="carousel__button carousel__nextButton">
+              <img
+                class="carousel__icon carousel__nextIcon"
+                src="icons/nextButton.svg"
+                alt="nastepne zdjęcie"
+              />
+            </button>
+          </div>
+        </section>
+        <section class="sendMessage">
+          <h2 class="sendMessage__header">Zapytaj o termin</h2>
+          <div class="sendMessage__flexboxContainer">
+            <div class="sendMessage__aboutMe">
+              <h3 class="sendMessage__head">Łukasz Wałkuski</h3>
+              <p
+                class="sendMessage__paragraph sendMessage__paragraph--changeFontSize"
+              >
+                Menager
+              </p>
+              <p
+                class="sendMessage__paragraph sendMessage__paragraph--addMargin"
+              >
+                tel. 690 242 424
+              </p>
+              <p class="sendMessage__paragraph sendMessage__paragraph">
+                lwalkuski@liwar.pl
+              </p>
+              <h3 class="sendMessage__head sendMessage__head--addMargin">
+                Dom Weselny Liwar
+              </h3>
+              <p class="sendMessage__paragraph sendMessage__paragraph">
+                tel. 690 242 424
+              </p>
+              <p class="sendMessage__paragraph">biuro@liwar.pl</p>
+              <p class="sendMessage__paragraph">ul. Taka i Taka 12</p>
+              <p class="sendMessage__paragraph">18-200 Pisz</p>
+            </div>
+
+            <form
+            class="form sendMessage__form"
+            id="contactForm"
+            method="post"
+            novalidate
+            action="https://formspree.io/myynwdze"
+          >
+            <div class="form-row">
+              
+              <input
+                type="text"
+                name="name"
+                required
+                id="field-name"
+                data-error="Wypełnij to pole"
+                pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+"
+                class="sendMessage__input"
+                placeholder="Imie i Nazwisko"
+                required
+              />
+            </div>
+            <div class="form-row">
+              
+              <input
+                type="email"
+                name="email"
+                required
+                id="field-email"
+                data-error="Wpisz poprawny email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                placeholder="E-mail"
+                class="sendMessage__input"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <textarea
+                name="message"
+                required
+                data-error="Musisz wypełnić pole"
+                id="field-message"
+                pattern=".+"
+                placeholder="Wiadomość"
+                class="sendMessage__textarea"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <button type="submit" value="" class="submit-btn sendMessage__button">
+                wyślij wiadomość
+              </button>
+            </div>
+            </form>
+      </section>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> 
+    <script src="js/main.js"></script>
+  </body>
+</html>

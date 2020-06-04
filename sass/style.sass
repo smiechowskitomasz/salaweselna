@@ -1,0 +1,39 @@
+@import 'variables'
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;800&display=swap")
+@import nav
+@import header
+@import arrangement
+@import menu
+@import carousel
+@import form
+@import sendMessage
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  list-style: none
+  text-decoration: none
+
+body
+  font-family: 'Muli', sans-serif
+  font-style: normal
+  background-image: url("../img/background.png")
+  background-repeat: no-repeat
+  background-size: auto 1015px
+  background-position: center -45px
+
+  // background-color: #fff
+  overflow-x: hidden
+  @media  ( min-width: 1523px )
+    background-size: 100% 1015px
+  // @media  ( max-width: 1023px )
+  //   background-size: auto 1072px
+  //   background-image: url("../img/backGroundDesktop.png")
+.wrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+.desktop
+  @media( max-width: 1024px )
+    display: none

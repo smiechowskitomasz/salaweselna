@@ -1,0 +1,76 @@
+.sendMessage
+  margin-top: 160px
+  padding: 160px 120px
+  background-color: #BE8B56
+
+  &__header
+    font-weight: bold
+    font-size: 88px
+    line-height: 90px
+    text-align: center
+    letter-spacing: -0.04em
+    color: #ffffff
+    padding-bottom: 78px
+  &__flexboxContainer
+    display: flex
+    @media ( max-width: 1023px )
+      flex-direction: column
+  &__aboutMe
+    flex-basis: 40%
+    border-right: 1px solid #DFC3A5
+    @media ( max-width: 1023px )
+      border-right: 0
+  &__head
+    font-weight: 600
+    font-size: 24px
+    line-height: 30px
+    letter-spacing: -0.04em
+    color: #FFFFFF
+  &__head--addMargin
+    margin: 40px 0 16px 0
+  &__paragraph
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: -0.04em
+    color: #F4F4F4
+  &__paragraph--addMargin
+    margin-top: 20px
+  &__paragraph--changeFontSize
+    font-weight: 700px
+    font-size: 21px
+    line-height: 30px
+  &__form
+    display: flex
+    flex-direction: column
+    padding-left: 98px
+    width: 100%
+  &__input
+    padding: 18px 24px
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: -0.04em
+    color: #5B5B5B
+    width: 100%
+  &__textarea
+    padding: 18px 24px
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: -0.04em
+    color: #5B5B5B
+    width: 100%
+    height: 124px
+  &__button
+    font-weight: 800
+    font-size: 18px
+    line-height: 22px
+    text-align: center
+    text-transform: uppercase
+    padding: 19px 40px
+    background-color: #000000
+    color: white
+    border: 0
+    max-width: 273px
+  &__input[type="text"].error,
+  &__input[type="email"].error,
+  &__textarea.error,
+    border-color: #e01546

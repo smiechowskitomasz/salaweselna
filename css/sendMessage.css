@@ -1,0 +1,120 @@
+.sendMessage {
+  margin-top: 160px;
+  padding: 160px 120px;
+  background-color: #BE8B56;
+}
+
+.sendMessage__header {
+  font-weight: bold;
+  font-size: 88px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  padding-bottom: 78px;
+}
+
+.sendMessage__flexboxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .sendMessage__flexboxContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.sendMessage__aboutMe {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  border-right: 1px solid #DFC3A5;
+}
+
+@media (max-width: 1023px) {
+  .sendMessage__aboutMe {
+    border-right: 0;
+  }
+}
+
+.sendMessage__head {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+}
+
+.sendMessage__head--addMargin {
+  margin: 40px 0 16px 0;
+}
+
+.sendMessage__paragraph {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  color: #F4F4F4;
+}
+
+.sendMessage__paragraph--addMargin {
+  margin-top: 20px;
+}
+
+.sendMessage__paragraph--changeFontSize {
+  font-weight: 700px;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.sendMessage__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 98px;
+  width: 100%;
+}
+
+.sendMessage__input {
+  padding: 18px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  color: #5B5B5B;
+  width: 100%;
+}
+
+.sendMessage__textarea {
+  padding: 18px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  color: #5B5B5B;
+  width: 100%;
+  height: 124px;
+}
+
+.sendMessage__button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 19px 40px;
+  background-color: #000000;
+  color: white;
+  border: 0;
+  max-width: 273px;
+}
+
+.sendMessage__input[type="text"].error, .sendMessage__input[type="email"].error, .sendMessage__textarea.error {
+  border-color: #e01546;
+}
+/*# sourceMappingURL=sendMessage.css.map */
