@@ -54,7 +54,7 @@ $(function() {
   var $inputs = $("form input[required], form textarea[required]");
 
   var displayFieldError = function($elem) {
-    var $fieldRow = $elem.closest(".form-row");
+    var $fieldRow = $elem.closest(".sendMessage__form-row");
     var $fieldError = $fieldRow.find(".field-error");
     if (!$fieldError.length) {
       var errorText = $elem.attr("data-error");
@@ -64,7 +64,7 @@ $(function() {
   };
 
   var hideFieldError = function($elem) {
-    var $fieldRow = $elem.closest(".form-row");
+    var $fieldRow = $elem.closest(".sendMessage__form-row");
     var $fieldError = $fieldRow.find(".field-error");
     if ($fieldError.length) {
       $fieldError.remove();
