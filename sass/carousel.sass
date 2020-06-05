@@ -1,7 +1,17 @@
 .carousel
-  margin: 0 30px
-  @media( max-width: 628px )
-    margin: 0 15px
+  margin: 0 auto
+
+  @media( max-width: 1248px )
+    padding: 0 65px
+  @media( max-width: 1024px )
+    margin: 0
+    padding: 0 40px
+  @media( max-width: 532px )
+    padding: 0
+  &--changeMarginGallery
+    margin-top: 120px
+    // @media( max-width: 1024px )
+    //   margin-top: 220px
   &__header
     font-size: 88px
     line-height: 90px
@@ -9,21 +19,21 @@
     letter-spacing: -0.04em
     color: #2B362A
     margin-bottom: 80px
+    @media( max-width: 1024px )
+      margin: 0 30px
+    @media( max-width: 450px )
+      font-size: 78px
+      line-height: 80px
     @media( max-width: 450px )
       font-size: 68px
       line-height: 70px
-  &__icon
-    @media( max-width: 672px )
-      transform: scale(0.8)
-    @media( max-width: 532px )
-      transform: scale(0.7)
 
   &__container
     position: relative
     width: 100%
-    padding: 0 auto
+    margin: 0 auto
     max-width: 1125px
-    overflow: hidden
+
   &__img
     max-width: 100%
     height: auto
@@ -33,24 +43,23 @@
     border: 0
     background-color: transparent
     cursor: pointer
-    @media( max-width: 672px )
-      transform: scale(0.8)
-    @media( max-width: 532px )
-      transform: scale(0.7)
 
   &__prevButton
     left: 0
     transform: translate(-50%, -50%)
-    @media( max-width: 672px )
-
-      transform: scale(0.8)
-    @media( max-width: 532px )
-      transform: scale(0.7)
+    @media( max-width: 1023px )
+      transform: translate(-50%, -50%) scale(0.8)
+      transform-origin: right
+    @media( max-width: 544px )
+      transform: translate(0, -50%) scale(0.5)
+      transform-origin: left
   &__nextButton
     right: 0
     transform: translate(50%, -50%)
-    @media( max-width: 672px )
-      transform: scale(0.8)
-    @media( max-width: 532px )
-      transform: scale(0.7)
-        //   transform: translate(0, -50%)
+    @media( max-width: 1023px )
+
+      transform: translate(50%, -50%) scale(0.8)
+      transform-origin: left
+    @media( max-width: 544px )
+      transform: translate(0, -50%) scale(0.5)
+      transform-origin: right

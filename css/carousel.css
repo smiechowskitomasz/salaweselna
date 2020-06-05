@@ -1,11 +1,28 @@
 .carousel {
-  margin: 0 30px;
+  margin: 0 auto;
 }
 
-@media (max-width: 628px) {
+@media (max-width: 1248px) {
   .carousel {
-    margin: 0 15px;
+    padding: 0 65px;
   }
+}
+
+@media (max-width: 1024px) {
+  .carousel {
+    margin: 0;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 532px) {
+  .carousel {
+    padding: 0;
+  }
+}
+
+.carousel--changeMarginGallery {
+  margin-top: 120px;
 }
 
 .carousel__header {
@@ -17,6 +34,19 @@
   margin-bottom: 80px;
 }
 
+@media (max-width: 1024px) {
+  .carousel__header {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .carousel__header {
+    font-size: 78px;
+    line-height: 80px;
+  }
+}
+
 @media (max-width: 450px) {
   .carousel__header {
     font-size: 68px;
@@ -24,26 +54,11 @@
   }
 }
 
-@media (max-width: 672px) {
-  .carousel__icon {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-
-@media (max-width: 532px) {
-  .carousel__icon {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-}
-
 .carousel__container {
   position: relative;
   width: 100%;
-  padding: 0 auto;
+  margin: 0 auto;
   max-width: 1125px;
-  overflow: hidden;
 }
 
 .carousel__img {
@@ -59,37 +74,27 @@
   cursor: pointer;
 }
 
-@media (max-width: 672px) {
-  .carousel__button {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-
-@media (max-width: 532px) {
-  .carousel__button {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-}
-
 .carousel__prevButton {
   left: 0;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-@media (max-width: 672px) {
+@media (max-width: 1023px) {
   .carousel__prevButton {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+    -webkit-transform-origin: right;
+            transform-origin: right;
   }
 }
 
-@media (max-width: 532px) {
+@media (max-width: 544px) {
   .carousel__prevButton {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: translate(0, -50%) scale(0.5);
+            transform: translate(0, -50%) scale(0.5);
+    -webkit-transform-origin: left;
+            transform-origin: left;
   }
 }
 
@@ -99,17 +104,21 @@
           transform: translate(50%, -50%);
 }
 
-@media (max-width: 672px) {
+@media (max-width: 1023px) {
   .carousel__nextButton {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: translate(50%, -50%) scale(0.8);
+            transform: translate(50%, -50%) scale(0.8);
+    -webkit-transform-origin: left;
+            transform-origin: left;
   }
 }
 
-@media (max-width: 532px) {
+@media (max-width: 544px) {
   .carousel__nextButton {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: translate(0, -50%) scale(0.5);
+            transform: translate(0, -50%) scale(0.5);
+    -webkit-transform-origin: right;
+            transform-origin: right;
   }
 }
 /*# sourceMappingURL=carousel.css.map */

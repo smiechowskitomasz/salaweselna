@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -20,7 +20,7 @@
         </div>
         <ul class="nav__list desktop">
           <li class="nav__item">
-            <a class="nav__link--resetStyle" href="#">Strona Główna</a>
+            <a class="nav__link--resetStyle" href="index.html">Strona Główna</a>
           </li>
           <li class="nav__item ">
             <a class="nav__link--resetStyle" href="/aboutUs.html">O nas</a>
@@ -29,7 +29,7 @@
             <a class="nav__link--resetStyle" href="/offer.html">Oferta</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link--resetStyle" href="/gallery.html">Galeria</a>
+            <a class="nav__link--resetStyle" href="#">Galeria</a>
           </li>
           <li class="nav__item" id="aboutMeLink">
             <a class="nav__link--resetStyle" href="/contact.html"> Kontakt</a>
@@ -37,53 +37,61 @@
         </ul>
       </nav>
       <header class="header">
-        <h1 class="header__mainHeader">Dom Weselny Limar w Piszu</h1>
-        <p class="header__paragraph">
-          Organizujemy: wesela, studniówki, chrzty, komunie, sylwestra,
-          uroczystości jubileuszowe, imprezy okolicznościowe.
-        </p>
-        <a href="#contact" class="header__contactLink"
-          ><button class="header__contactButton">Więcej</button></a
-        >
+        <h1 class="header__mainHeader header__mainHeader--changeMarginGallery">
+          Galeria
+        </h1>
       </header>
       <main>
-        <section class="arrangement">
-          <img
-            class="arrangement__img"
-            src="img/chairs.png"
-            alt="Nasz wystrój sal"
-          />
-          <div class="arrangement__flexboxContainer">
-            <h2 class="arrangement__header">Aranżacja wnętrz</h2>
-            <p class="arrangement__paragraph">
-              Eleganckie wnętrze sali barokowej, zapewni doskonałą scenerię do
-              organizacji imprez o dowolnej tematyce. Nasza troska o detale
-              sprawi, że zaproszeni Goście zapamiętają na długo ten wyjątkowy
-              dzień!
-            </p>
-            <h3 class="arrangement__head">Dodatkowo</h3>
-            <p class="arrangement__param">
-              Posiadamy w ofercie również limuzynę, autokar oraz pokoje
-              noclegowe dla gości domu weselnego.
-            </p>
+        <section class="carousel carousel--changeMarginGallery">
+          <h2 class="carousel__header">Wnętrze</h2>
+          <div class="carousel__container">
+            <img
+              class="carousel__img"
+              src="img/photo1.png"
+              alt="Wygląd naszych sal"
+            />
+            <button class="carousel__button carousel__prevButton">
+              <img
+                class="carousel__icon carousel__prevIcon"
+                src="icons/prevButton.svg"
+                alt="poprzednie zdjęcie"
+              />
+            </button>
+            <button class="carousel__button carousel__nextButton">
+              <img
+                class="carousel__icon carousel__nextIcon"
+                src="icons/nextButton.svg"
+                alt="nastepne zdjęcie"
+              />
+            </button>
           </div>
         </section>
-        <section class="menu">
-          <div class="menu__flexboxContainer">
-            <h2 class="menu__header">Menu</h2>
-            <p class="menu__paragraph">
-              Ustalamy indywidualnie według życzenia osób zamawiających
-              przyjęcie. W skład menu weselnego wchodzi: -6 dań gorących -10
-              przystawek -napoje gazowane, soki, woda mineralna -słodki bufet :
-              ciasta,słodkie przekąski, owoce, kawa, hrerbata. Za dodatkową
-              opłatą: stół wiejski i fontanna czekoladowa z szaszłykami
-              owocowymi.
-            </p>
+        <section class="carousel carousel--changeMarginGallery">
+          <h2 class="carousel__header">Stoły</h2>
+          <div class="carousel__container">
+            <img
+              class="carousel__img"
+              src="img/photo1.png"
+              alt="Wygląd naszych sal"
+            />
+            <button class="carousel__button carousel__prevButton">
+              <img
+                class="carousel__icon carousel__prevIcon"
+                src="icons/prevButton.svg"
+                alt="poprzednie zdjęcie"
+              />
+            </button>
+            <button class="carousel__button carousel__nextButton">
+              <img
+                class="carousel__icon carousel__nextIcon"
+                src="icons/nextButton.svg"
+                alt="nastepne zdjęcie"
+              />
+            </button>
           </div>
-          <img class="menu__img" src="img/menu.png" alt="Przykładowe potrawy" />
         </section>
-        <section class="carousel">
-          <h2 class="carousel__header">Sala barokowa</h2>
+        <section class="carousel carousel--changeMarginGallery">
+          <h2 class="carousel__header">Ogród i parking</h2>
           <div class="carousel__container">
             <img
               class="carousel__img"
@@ -193,6 +201,6 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
-    <script src="js/main.js"></script>
+    <script src="js/aboutUs.js"></script>
   </body>
 </html>

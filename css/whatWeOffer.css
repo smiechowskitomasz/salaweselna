@@ -1,0 +1,125 @@
+.whatWeOffer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 439px;
+}
+
+@media (max-width: 1023px) {
+  .whatWeOffer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 520px;
+  }
+}
+
+.whatWeOffer__flexboxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding: 0 122px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1207px) {
+  .whatWeOffer__flexboxContainer {
+    padding: 0 62px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .whatWeOffer__flexboxContainer {
+    padding: 0;
+    width: 86%;
+  }
+}
+
+.whatWeOffer__img {
+  width: auto;
+  height: auto;
+  max-height: 647px;
+}
+
+@media (max-width: 1080px) {
+  .whatWeOffer__img {
+    -webkit-transform: scale(0.88);
+            transform: scale(0.88);
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .whatWeOffer__img {
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 556px;
+  }
+}
+
+@media (max-width: 556px) {
+  .whatWeOffer__img {
+    width: 100%;
+  }
+}
+
+.whatWeOffer__header {
+  font-weight: bold;
+  font-size: 88px;
+  line-height: 90px;
+  letter-spacing: -0.04em;
+  color: #2B362A;
+  margin: 120px 0 40px 0;
+}
+
+@media (max-width: 1110px) {
+  .whatWeOffer__header {
+    font-size: 78px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .whatWeOffer__header {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 394px) {
+  .whatWeOffer__header {
+    font-size: 66px;
+    line-height: 68px;
+  }
+}
+
+.whatWeOffer__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  color: #5B5B5B;
+  text-align: left;
+}
+
+@media (max-width: 1110px) {
+  .whatWeOffer__paragraph {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .whatWeOffer__paragraph {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=whatWeOffer.css.map */

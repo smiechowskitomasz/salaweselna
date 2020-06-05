@@ -45,6 +45,10 @@
   }
 }
 
+.header__mainHeader--changeMarginGallery {
+  margin: 80px auto 90px auto;
+}
+
 .header__paragraph {
   margin: 0 auto 40px auto;
   font-family: Muli;

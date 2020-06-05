@@ -1,9 +1,12 @@
 .sendMessage
+  flex-basis: 100%
   margin-top: 160px
   padding: 160px 120px
   background-color: #BE8B56
   @media ( max-width: 1023px )
     padding: 160px 40px
+  @media ( max-width: 799px )
+    margin-top: 80px
 
   &__header
     font-weight: bold
@@ -56,6 +59,7 @@
     flex-direction: column
     padding-left: 98px
     width: 100%
+    align-items: center
 
     @media ( max-width: 1150px )
       padding-left: 40px

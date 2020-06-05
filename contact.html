@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/aboutUs.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Limar - Dom Weselny</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img class="nav__img" src="icons/logoLimar.svg" alt="page logo" />
+        </div>
+        <ul class="nav__list desktop">
+          <li class="nav__item">
+            <a class="nav__link--resetStyle" href="index.html">Strona Główna</a>
+          </li>
+          <li class="nav__item ">
+            <a class="nav__link--resetStyle" href="/aboutUs.html">O nas</a>
+          </li>
+          <li class="nav__item" id="contactLink">
+            <a class="nav__link--resetStyle" href="/offer.html">Oferta</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link--resetStyle" href="/gallery.html">Galeria</a>
+          </li>
+          <li class="nav__item" id="aboutMeLink">
+            <a class="nav__link--resetStyle" href="#"> Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <h1 class="header__mainHeader">Kontakt</h1>
+        <p class="header__paragraph">
+          Jeśli są państwo zainteresowani naszą ofertą proszę wypełnić formularz
+          bądź skontaktowac się bezposrednio z nami.Zapraszmy do kontaktu.
+        </p>
+      </header>
+      <section class="sendMessage">
+        <h2 class="sendMessage__header">Zapytaj o termin</h2>
+        <div class="sendMessage__flexboxContainer">
+          <div class="sendMessage__aboutMe">
+            <h3 class="sendMessage__head">Łukasz Wałkuski</h3>
+            <p
+              class="sendMessage__paragraph sendMessage__paragraph--changeFontSize"
+            >
+              Menager
+            </p>
+            <p class="sendMessage__paragraph sendMessage__paragraph--addMargin">
+              tel. 690 242 424
+            </p>
+            <p class="sendMessage__paragraph sendMessage__paragraph">
+              lwalkuski@liwar.pl
+            </p>
+            <h3 class="sendMessage__head sendMessage__head--addMargin">
+              Dom Weselny Liwar
+            </h3>
+            <p class="sendMessage__paragraph sendMessage__paragraph">
+              tel. 690 242 424
+            </p>
+            <p class="sendMessage__paragraph">biuro@liwar.pl</p>
+            <p class="sendMessage__paragraph">ul. Taka i Taka 12</p>
+            <p class="sendMessage__paragraph">18-200 Pisz</p>
+          </div>
+
+          <form
+            class="form sendMessage__form"
+            id="contactForm"
+            method="post"
+            novalidate
+            action="https://formspree.io/myynwdze"
+          >
+            <div class="sendMessage__form-row form-row">
+              <input
+                type="text"
+                name="name"
+                required
+                id="field-name"
+                data-error="Wypełnij to pole"
+                pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+"
+                class="sendMessage__input"
+                placeholder="Imie i Nazwisko"
+              />
+            </div>
+            <div class="sendMessage__form-row form-row">
+              <input
+                type="email"
+                name="email"
+                required
+                id="field-email"
+                data-error="Wpisz poprawny email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                placeholder="E-mail"
+                class="sendMessage__input"
+              />
+            </div>
+            <div class="sendMessage__form-row form-row">
+              <textarea
+                name="message"
+                required
+                data-error="Musisz wypełnić pole"
+                id="field-message"
+                placeholder="Wiadomość"
+                class="sendMessage__textarea"
+              ></textarea>
+            </div>
+
+            <div class="sendMessage__form-row form-row">
+              <button
+                type="submit"
+                value=""
+                class="submit-btn sendMessage__button"
+              >
+                wyślij wiadomość
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
+    <script src="js/aboutUs.js"></script>
+  </body>
+</html>
