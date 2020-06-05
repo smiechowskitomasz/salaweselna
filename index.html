@@ -136,66 +136,67 @@
             </div>
 
             <form
-            class="form sendMessage__form"
-            id="contactForm"
-            method="post"
-            novalidate
-            action="https://formspree.io/myynwdze"
-          >
-            <div class="form-row">
-              
-              <input
-                type="text"
-                name="name"
-                required
-                id="field-name"
-                data-error="Wypełnij to pole"
-                pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+"
-                class="sendMessage__input"
-                placeholder="Imie i Nazwisko"
-                required
-              />
-            </div>
-            <div class="form-row">
-              
-              <input
-                type="email"
-                name="email"
-                required
-                id="field-email"
-                data-error="Wpisz poprawny email"
-                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                placeholder="E-mail"
-                class="sendMessage__input"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <textarea
-                name="message"
-                required
-                data-error="Musisz wypełnić pole"
-                id="field-message"
-                pattern=".+"
-                placeholder="Wiadomość"
-                class="sendMessage__textarea"
-                required
-              ></textarea>
-            </div>
+              class="form sendMessage__form"
+              id="contactForm"
+              method="post"
+              novalidate
+              action="https://formspree.io/myynwdze"
+            >
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  id="field-name"
+                  data-error="Wypełnij to pole"
+                  pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+"
+                  class="sendMessage__input"
+                  placeholder="Imie i Nazwisko"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  id="field-email"
+                  data-error="Wpisz poprawny email"
+                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                  placeholder="E-mail"
+                  class="sendMessage__input"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <textarea
+                  name="message"
+                  required
+                  data-error="Musisz wypełnić pole"
+                  id="field-message"
+                  pattern=".+"
+                  placeholder="Wiadomość"
+                  class="sendMessage__textarea"
+                  required
+                ></textarea>
+              </div>
 
-            <div class="form-row">
-              <button type="submit" value="" class="submit-btn sendMessage__button">
-                wyślij wiadomość
-              </button>
-            </div>
+              <div class="form-row">
+                <button
+                  type="submit"
+                  value=""
+                  class="submit-btn sendMessage__button"
+                >
+                  wyślij wiadomość
+                </button>
+              </div>
             </form>
-      </section>
-          </div>
+         
         </section>
       </main>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
