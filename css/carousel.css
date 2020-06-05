@@ -1,5 +1,11 @@
 .carousel {
-  margin: 0 10%;
+  margin: 0 30px;
+}
+
+@media (max-width: 628px) {
+  .carousel {
+    margin: 0 15px;
+  }
 }
 
 .carousel__header {
@@ -11,11 +17,33 @@
   margin-bottom: 80px;
 }
 
+@media (max-width: 450px) {
+  .carousel__header {
+    font-size: 68px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 672px) {
+  .carousel__icon {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 532px) {
+  .carousel__icon {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
 .carousel__container {
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  padding: 0 auto;
   max-width: 1125px;
+  overflow: hidden;
 }
 
 .carousel__img {
@@ -31,15 +59,57 @@
   cursor: pointer;
 }
 
+@media (max-width: 672px) {
+  .carousel__button {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 532px) {
+  .carousel__button {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
 .carousel__prevButton {
   left: 0;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 672px) {
+  .carousel__prevButton {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 532px) {
+  .carousel__prevButton {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
 .carousel__nextButton {
   right: 0;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
+}
+
+@media (max-width: 672px) {
+  .carousel__nextButton {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 532px) {
+  .carousel__nextButton {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 /*# sourceMappingURL=carousel.css.map */

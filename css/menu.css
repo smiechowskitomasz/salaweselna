@@ -13,6 +13,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
