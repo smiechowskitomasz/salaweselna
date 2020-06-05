@@ -3,9 +3,9 @@
 
   @media( max-width: 1248px )
     padding: 0 65px
-  @media( max-width: 1024px )
+  @media( max-width: 1023px )
     margin: 0
-    padding: 0 40px
+    padding: 0 50px
   @media( max-width: 532px )
     padding: 0
   &--changeMarginGallery
@@ -19,7 +19,7 @@
     letter-spacing: -0.04em
     color: #2B362A
     margin-bottom: 80px
-    @media( max-width: 1024px )
+    @media( max-width: 1023px )
       margin: 0 30px
     @media( max-width: 450px )
       font-size: 78px
@@ -43,13 +43,12 @@
     border: 0
     background-color: transparent
     cursor: pointer
-
   &__prevButton
     left: 0
     transform: translate(-50%, -50%)
     @media( max-width: 1023px )
       transform: translate(-50%, -50%) scale(0.8)
-      transform-origin: right
+      transform-origin: center
     @media( max-width: 544px )
       transform: translate(0, -50%) scale(0.5)
       transform-origin: left
@@ -59,7 +58,7 @@
     @media( max-width: 1023px )
 
       transform: translate(50%, -50%) scale(0.8)
-      transform-origin: left
+      transform-origin: center
     @media( max-width: 544px )
       transform: translate(0, -50%) scale(0.5)
       transform-origin: right
