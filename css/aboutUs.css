@@ -145,6 +145,10 @@
   }
 }
 
+.header__mainHeader--changeMarginGallery {
+  margin: 80px auto 90px auto;
+}
+
 .header__paragraph {
   margin: 0 auto 40px auto;
   font-family: Muli;
@@ -342,6 +346,9 @@
           flex-direction: column;
   padding-left: 98px;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1150px) {

@@ -34,6 +34,12 @@
   }
 }
 
+@media (max-width: 1090px) {
+  .arrangement__flexboxContainer {
+    padding: 0 52px;
+  }
+}
+
 @media (max-width: 1023px) {
   .arrangement__flexboxContainer {
     padding: 0;
@@ -83,8 +89,8 @@
 
 @media (max-width: 1110px) {
   .arrangement__header {
-    font-size: 78px;
-    line-height: 80px;
+    font-size: 74px;
+    line-height: 76px;
   }
 }
 

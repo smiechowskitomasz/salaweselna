@@ -198,14 +198,14 @@
 
 @media (max-width: 1248px) {
   .carousel {
-    padding: 0 65px;
+    padding: 0 75px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .carousel {
     margin: 0;
-    padding: 0 40px;
+    padding: 0 50px;
   }
 }
 
@@ -228,7 +228,7 @@
   margin-bottom: 80px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .carousel__header {
     margin: 0 30px;
   }
@@ -278,8 +278,8 @@
   .carousel__prevButton {
     -webkit-transform: translate(-50%, -50%) scale(0.8);
             transform: translate(-50%, -50%) scale(0.8);
-    -webkit-transform-origin: right;
-            transform-origin: right;
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
 }
 
@@ -302,8 +302,8 @@
   .carousel__nextButton {
     -webkit-transform: translate(50%, -50%) scale(0.8);
             transform: translate(50%, -50%) scale(0.8);
-    -webkit-transform-origin: left;
-            transform-origin: left;
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
 }
 
